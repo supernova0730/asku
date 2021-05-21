@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Оформление{% endblock title %}
+
+{% block content %}
+    <section>
+        <div class="container-content">
+            <div class="history-links">
+                <p>Главная / <span>Кoрзина</span></p>
+            </div>
+            <div class="basket-form">
+                <form action="">
+                    <input type="name" placeholder="Имя">
+                    <input type="surname" placeholder="Фамилия">
+                    <input type="phone" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Корзина{% endblock title %}
+
+{% block content %}
+    <section>
+        <div class="container-content">
+            <div class="history-links">
+                <p>Главная / <span>Кoрзина</span></p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header-basket">Кoрзина</h2>
+                    <table class="table" id='basket'>
+                        <thead>
+                        <tr class="table-tr">
+                            <th style="width: 100px; text-align: center;">№</th>
+                            <th>Название товара</th>
+                            <th>Количество</th>
+                            <th class="text-end">Цена</th>
+                            <th class="text-end">Сумма</th>
+                            <th style="width: 100px;"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="basket-item">
+                            <td class="align-middle" style="text-align: center;">1</td>
+                            <td class="align-middle">
+                                <div class="basket-product"><img src="{% static 'assets/img/product/basket-img.png' %}"
+                                                                 alt="">
+                                    <p>Колпачок КП-6а (КП-22) для ШФ-10/ШФ-20/ШС-10/ШС-20 черн. ПЛАСТДЕТАЛЬ
+                                        ЦБ-00000633</p>
+                                </div>
+                            </td>
+                            <td class="align-middle count">
+                                <div class="input-groups">
+                                    <input type="number" value="2" data-price="590" class="form-controls input"
+                                           disabled/>
+                                    <div class="input-buttons">
+                                        <button type="button" class="input-button btn-plus">></button>
+                                        <button type="button" class="input-button btn-minus">></button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle price text-end">590 ₸</td>
+                            <td class="align-middle text-end subtotal">1180 ₸</td>
+                            <td class="align-middle text-end">
+                                <a class="drop" href="#"><img
+                                        src="{% static 'assets/img/icon/btn-icon/basket-drop.png' %}" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr class="basket-item">
+                            <td class="align-middle" style="text-align: center;">2</td>
+                            <td class="align-middle">
+                                <div class="basket-product"><img src="{% static 'assets/img/product/basket-img.png' %}"
+                                                                 alt="">
+                                    <p>Колпачок КП-6а (КП-22) для ШФ-10/ШФ-20/ШС-10/ШС-20 черн. ПЛАСТДЕТАЛЬ
+                                        ЦБ-00000633</p>
+                                </div>
+                            </td>
+                            <td class="align-middle count">
+                                <div class="input-groups">
+                                    <input type="number" value="1" data-price="590" class="form-controls input"
+                                           disabled/>
+                                    <div class="input-buttons">
+                                        <button type="button" class="input-button btn-plus">></button>
+                                        <button type="button" class="input-button btn-minus">></button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle price text-end">590 ₸</td>
+                            <td class="align-middle text-end subtotal">590 ₸</td>
+                            <td class="align-middle text-end">
+                                <a class="drop" href="#"><img
+                                        src="{% static 'assets/img/icon/btn-icon/basket-drop.png' %}" alt=""></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-footer">
+                        <div class="checkout-btn"><a href="{% url 'basket-form' %}">
+                            <button>Оформить заказ</button>
+                        </a></div>
+                        <div class="total-price fw-bold text-end pr-2">Итого....... <span id="total-price">0</span> ₸
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'assets/js/basket.js' %}"></script>
+{% endblock content %}
+
+

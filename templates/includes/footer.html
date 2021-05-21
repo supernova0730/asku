@@ -1,0 +1,42 @@
+{% load static %}
+<footer>
+    <div class="footer">
+        <div class="container-content">
+            <div class="logo">
+                <img src="{% static 'assets/img/logo/logo.png' %}" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О Нас</a></li>
+                    <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a href="{% url 'product_list' %}">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-title">
+                    <h2 class="footer-h2">Контакты:</h2>
+                    <p><img src="{% static 'assets/img/icon/email.png' %}" alt="email"> info@asku-energy.com</p>
+                    <p><img src="{% static 'assets/img/icon/email.png' %}" alt="email"> info@asku-energy.com</p>
+                    <p><img src="{% static 'assets/img/icon/phone.png' %}" alt="phone"> +7(7112)51-73-25</p>
+                    <p><img src="{% static 'assets/img/icon/phone.png' %}" alt="phone"> +7 (702) 196-78-52</p>
+                </div>
+            </div>
+            <div class="footer-address">
+                <div class="footer-address-title">
+                    <h2 class="footer-h2">Адресс:</h2>
+                    <p>г. Уральск ул. Автомобильная дом 1. Этаж 3 Офис 3</p>
+                    <div class="social-network">
+                        <a href="#"><img src="{% static 'assets/img/icon/instagram.png' %}" alt="instagram"></a>
+                        <a href="#"><img src="{% static 'assets/img/icon/whatsapp.png' %}" alt="whatsappp"></a>
+                        <a href="#"><img src="{% static 'assets/img/icon/telegram.png' %}" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2019 ТОО «ASKU Energy». Все права защищены.</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,48 @@
+{% load static %}
+<header class="header">
+    <div class="wrap">
+        <div class="container-content">
+            <div class="navbar">
+                <div class="location">
+                    <i><img src="{% static 'assets/img/icon/Vector.png' %}" alt=""></i>
+                    <p class="location-address">г. Уральск ул. Автомобильная дом 1. Этаж 3 Офис 3</p>
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'product_list' %}">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'reviews' %}">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacts' %}">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container-content">
+            <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+            <form class="search">
+                <input class="search-input" type="search" placeholder="Что вы ищите?" aria-label="Search">
+                <button class="btn search-btn" type="submit"><i><img src="{% static 'assets/img/icon/loupe.png' %}"
+                                                                     alt=""></i>
+                </button>
+            </form>
+            <div class="contact-scoreboard">
+                <p class="contact-scoreboard-phone">+7(7112)25-02-04 <img src="{% static 'assets/img/icon/phone.png' %}"
+                                                                          alt=""></p>
+                <p class="contact-scoreboard-email">sales@asku-energy.com <img
+                        src="{% static 'assets/img/icon/email.png' %}" alt="">
+                </p>
+            </div>
+            <div class="basket">
+                <a href="{% url 'basket' %}"><img src="{% static 'assets/img/icon/basket.png' %}" alt=""></a>
+            </div>
+        </div>
+    </div>
+</header>

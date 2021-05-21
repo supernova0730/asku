@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Обратная связь{% endblock title %}
+
+{% block content %}
+    <section>
+        <div class="container-content">
+            <div class="history-links">
+                <p>Главная / <span>Контакты</span></p>
+            </div>
+            <div class="contact">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <h2>Контакты</h2>
+                    </div>
+                    <div class="contact-address">
+                        <i><img src="{% static 'assets/img/icon/location.png' %}" alt=""></i>
+                        <p>г Уральск ул автомобильная д1. <br>
+                            3 этаж офис 3</p>
+                    </div>
+                    <div class="contact-phone">
+                        <div class="phone-title">
+                            <i><img src="{% static 'assets/img/icon/phone.png' %}" alt=""></i>
+                            <p>+7 (7112) 24-32-42 - приёмная</p>
+                        </div>
+                        <div class="phone-title">
+                            <i><img src="{% static 'assets/img/icon/phone.png' %}" alt=""></i>
+                            <p>+7 (711) 22-502-04 - отдел продаж</p>
+                        </div>
+                    </div>
+                    <div class="contact-email">
+                        <div class="email-title">
+                            <i><img src="{% static 'assets/img/icon/email.png' %}" alt=""></i>
+                            <p>info@asku-energy.com</p>
+                        </div>
+                        <div class="email-title">
+                            <i><img src="{% static 'assets/img/icon/email.png' %}" alt=""></i>
+                            <p>sales@asku-energy.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-form-header">
+                        <h2>Оставить заявку:</h2>
+                    </div>
+                    <div class="contact-form-data">
+                        <input type="name" required placeholder="Имя">
+                        <input type="email" required placeholder="E-mail">
+                    </div>
+                    <div class="contact-form-message">
+                        <textarea name="" id="" cols="30" rows="10" form="12" required
+                                  placeholder="Сообщение"></textarea>
+                    </div>
+                    <button class="btn-form" form="" type="button">Отправить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <div id="map" style="width:100%; height:600px"></div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.238477, 51.402795],
+                zoom: 20,
+                scrollWheelZoom: false
+            });
+            DG.marker([51.238477, 51.402795]).addTo(map).bindPopup(' TOO "ASKU Energy"   г.Уральск ул. Автомобильная дом 1. Этаж 3 Офис 3');
+        });
+    </script>
+{% endblock content %}

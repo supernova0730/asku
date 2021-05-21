@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ASKU Energy{% endblock title %}
+
+{% block content %}
+    <section>
+        <div class="background">
+            <div class="header-info container-content">
+                <h1>ТОО “ASKU Energy”</h1>
+                <p>МЫ ПОСТАВЛЯЕМ ПРОМЫШЛЕННОЕ ОБОРУДОВАНИЕ ДЛЯ РАЗНЫХ ОТРАСЛЕЙ
+                    и комплектующие известных брендов</p>
+                <p><a href="{% url 'about' %}">Подробнее</a></p>
+            </div>
+        </div>
+        <div class="service-scoreboard">
+            <div class="container-content">
+                <div class="service-plate">
+                    <div class="plate-offer">
+                        <img src="{% static 'assets/img/icon/service-icon/checked 1.png' %}" alt="">
+                        <p>Лучшая цена и высокое качество</p>
+                    </div>
+                    <div class="plate-offer">
+                        <img src="{% static 'assets/img/icon/service-icon/shopping-cart 1.png' %}" alt="">
+                        <p>Оптовая поставка электротехнической продукции</p>
+                    </div>
+                    <div class="plate-offer">
+                        <img src="{% static 'assets/img/icon/service-icon/gear 1.png' %}" alt="">
+                        <p>Монтаж любой сложности</p>
+                    </div>
+                    <div class="plate-offer">
+                        <img src="{% static 'assets/img/icon/service-icon/like 1.png' %}" alt="">
+                        <p>Индивидуальный подход к каждому клиенту</p>
+                    </div>
+                </div>
+                <div class="service-scoreboard-offer">
+                    <h2>Мы предлагаем</h2>
+                    <div class="scoreboard-offer">
+                        <div class="offer-table">
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/1.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/2.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/3.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer-table">
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/4.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/5.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/6.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer-table">
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/7.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/8.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                            <div class="offer-table-component">
+                                <div class="offer-table-elements">
+                                    <img src="{% static 'assets/img/icon/service-icon/9.png' %}" alt="">
+                                    <p>Все для дома и офиса</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-catalog-link">
+                        <p><a href="{% url 'product_list' %}">Перейти в каталог</a></p>
+                        <img src="{% static 'assets/img/icon/service-icon/Arrow 1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-section">
+            <h2>О нас</h2>
+            <div class="about-scoreboard container-content">
+                <img src="{% static 'assets/img/about-img.png' %}" alt="">
+                <div class="about-scoreboard-title">
+                    <h3>ТОО «ASKU Energy»</h3>
+                    <p>Компания «ASKU Energy» была основана в 2014 году, и ее основным направлением в начале было
+                        поставка
+                        электротехнических товаров и монтаж. Сегодня компания «ASKU Energy» является одним из основных
+                        поставщиков в западном регионе Казахстана. Наша компания успешно развивает как продажу
+                        низковольтной
+                        аппаратуры так и поставки запасных частей для нефтегазовой отрасли. Репутация точного,
+                        выполняющего
+                        обязательства партнера позволила нашей компании построить прочные отношения с одними из
+                        крупнейших
+                        компаний ЗКО.</p>
+                    <p class="about-link"><a href="{% url 'about' %}">Подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="partners-section">
+            <h2>Наши партнеры</h2>
+            <div class="container-content">
+                <div class="partners-section-logo">
+                    <img src="{% static 'assets/img/logo/partners/1.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/2.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/3.png' %}" alt="">
+                </div>
+                <div class="partners-section-logo">
+                    <img src="{% static 'assets/img/logo/partners/5.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/6.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/7.png' %}" alt="">
+                </div>
+                <div class="partners-section-logo">
+                    <img src="{% static 'assets/img/logo/partners/8.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/9.png' %}" alt="">
+                    <img src="{% static 'assets/img/logo/partners/10.pn' %}g" alt="">
+                </div>
+                <div class="partners-section-logo">
+                    <img src="{% static 'assets/img/logo/partners/11.pn' %}g" alt="">
+                    <img src="{% static 'assets/img/logo/partners/12.pn' %}g" alt="">
+                    <img src="{% static 'assets/img/logo/partners/13.pn' %}g" alt="">
+                </div>
+            </div>
+            <p class="partners-link"><a href="{% url 'about' %}">Еще...</a></p>
+        </div>
+        <div class="map-section">
+            <div id="map" style="width:100%; height:600px"></div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.238477, 51.402795],
+                zoom: 20,
+                scrollWheelZoom: false
+            });
+            DG.marker([51.238477, 51.402795]).addTo(map).bindPopup(' TOO "ASKU Energy"   г.Уральск ул. Автомобильная дом 1. Этаж 3 Офис 3');
+        });
+    </script>
+{% endblock content %}
